@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView2;
     RecyclerView recyclerView3;
     ArrayList<Items> itemList;
-    ArrayList<Items1> item1List;
-    ArrayList<Items2> item2List;
+    ArrayList<Items> item1List;
+    ArrayList<Items3> item2List;
     ArrayList<Items3> item3List;
 
     // Variable to create a Welcome Screen
@@ -45,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
         itemList.add(new Items("TODAY"));
         itemList.add(new Items("TOMORROW"));
         itemList.add(new Items("NEXT DAY"));
-        item1List.add(new Items1("BREAKFAST"+"\n"+"8:00"));
-        item1List.add(new Items1("STUDY"+"\n"+"9:00"));
-        item1List.add(new Items1("LUNCH"+"\n"+"12:00"));
-        item1List.add(new Items1("STUDY"+"\n"+"3:00"));
-        item1List.add(new Items1("GAMES"+"\n"+"6:00"));
-        item1List.add(new Items1("DINNER"+"\n"+"9:00"));
-        item2List.add(new Items2(R.drawable.tick));
-        item2List.add(new Items2(R.drawable.wrong));
+        item1List.add(new Items("BREAKFAST"+"\n"+"8:00"));
+        item1List.add(new Items("STUDY"+"\n"+"9:00"));
+        item1List.add(new Items("LUNCH"+"\n"+"12:00"));
+        item1List.add(new Items("STUDY"+"\n"+"3:00"));
+        item1List.add(new Items("GAMES"+"\n"+"6:00"));
+        item1List.add(new Items("DINNER"+"\n"+"9:00"));
+        item2List.add(new Items3(R.drawable.tick));
+        item2List.add(new Items3(R.drawable.wrong));
         item3List.add(new Items3(R.drawable.achievements));
 
         LinearLayoutManager layoutmanager=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);

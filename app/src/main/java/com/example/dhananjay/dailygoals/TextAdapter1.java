@@ -21,10 +21,10 @@ import java.util.ArrayList;
 public class TextAdapter1 extends RecyclerView.Adapter<TextAdapter1.ViewHolder> {
 
     private Context mcontext;
-    private ArrayList<Items1> item1List;
+    private ArrayList<Items> item1List;
 
 
-    TextAdapter1(Context context,ArrayList<Items1> list){
+    TextAdapter1(Context context,ArrayList<Items> list){
         mcontext=context;
         item1List=list;
 
@@ -42,7 +42,7 @@ public class TextAdapter1 extends RecyclerView.Adapter<TextAdapter1.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        Items1 item=item1List.get(position);
+        Items item=item1List.get(position);
         TextView text=holder.text1;
         text.setText(item.getText());
 

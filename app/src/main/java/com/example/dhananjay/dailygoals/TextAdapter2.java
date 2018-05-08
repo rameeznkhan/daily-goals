@@ -24,10 +24,10 @@ import java.util.ArrayList;
 public class TextAdapter2 extends RecyclerView.Adapter<TextAdapter2.ViewHolder> {
 
     private Context mcontext;
-    private ArrayList<Items2> item2List;
+    private ArrayList<Items3> item2List;
 
 
-    TextAdapter2(Context context,ArrayList<Items2> list){
+    TextAdapter2(Context context,ArrayList<Items3> list){
         mcontext=context;
         item2List=list;
 
@@ -45,7 +45,7 @@ public class TextAdapter2 extends RecyclerView.Adapter<TextAdapter2.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
-        Items2 item=item2List.get(position);
+        Items3 item=item2List.get(position);
         ImageView image2=holder.image2;
         image2.setImageResource(item.getImage());
 
