@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutmanager1=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager1=layoutmanager1;
         recyclerView1.setLayoutManager(rvlayoutmanager1);
-        TextAdapter1 adapter1=new TextAdapter1(this,item1List);
+        TextAdapter adapter1=new TextAdapter(this,item1List);
         recyclerView1.setAdapter(adapter1);
 
         LinearLayoutManager layoutmanager2=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager layoutmanager3=new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         RecyclerView.LayoutManager rvlayoutmanager3=layoutmanager3;
         recyclerView3.setLayoutManager(rvlayoutmanager3);
-        TextAdapter3 adapter3=new TextAdapter3(this,item3List);
+        TextAdapter2 adapter3=new TextAdapter2(this,item3List);
         recyclerView3.setAdapter(adapter3);
         
          ItemClickSupport.addTo( recyclerView ).setOnItemClickListener( new ItemClickSupport.OnItemClickListener() {
